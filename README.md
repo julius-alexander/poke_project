@@ -14,3 +14,4 @@ Future work includes:
   * Change PokeMon
   * Change level
   * Change nature
+  * Generate save file to save progress after closing program
