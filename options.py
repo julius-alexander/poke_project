@@ -79,7 +79,6 @@ def change_pokemon():
 def verify_mon(pokemon):
     pa.myCursor.execute(f"SELECT * FROM pokemon_stats where `Name` = \"{pokemon}\"")
     res = pa.myCursor.fetchone()
-    print(f"This is res: {res}")
     if res is None:
         print('No match found.')
         return None

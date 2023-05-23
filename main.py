@@ -40,8 +40,10 @@ def main():
 
         # 4. Change PokeMon Nature
         elif choice == '4':
+            poke_to_change = input('Which PokeMon would you like to change the nature of?'
+                                   'Please enter their position in your party to avoid same-name conflicts')
             new_nature = input('Enter the nature you wish to apply: ').title()
-            while new_nature not in pa.Natures:
+            while new_nature not in pa.natures_list:
                 new_nature = input('Please enter a valid nature: ').title()
 
             print(f'Here are your new stats after changing nature:\n\n')
